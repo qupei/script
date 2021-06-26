@@ -38,7 +38,7 @@ if (url.indexOf(path2) != -1) {
             if (data.priceTrend.series.length == 0) throw new Error('Whoops!')
             msg = priceSummary(data.priceTrend)
         })
-        .catch(error => msg = "暂无价格信息")
+        .catch(error => msg = "暂无价格信息-q")
         .finally(() => {
             const lowerword = adword_obj()
             lowerword.data.ad.textColor = "#fe0000"
