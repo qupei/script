@@ -12,6 +12,7 @@ const $tool = tool();
 // path3
 if (url.indexOf(path3) != -1) {
     let obj = JSON.parse(body);
+	console.info(obj)
 	obj.code = 999
 	
     $done({ body: JSON.stringify(obj) });
